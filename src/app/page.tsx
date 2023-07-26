@@ -1,5 +1,5 @@
 import Image from "next/image";
-import bg from "../../public/teams.png";
+import bg from "../../public/bg-fidooo.svg";
 import Link from "next/link";
 import { FacebookIcon } from "@/icons/Facebook.Icon";
 import { InstagramIcon } from "@/icons/Instagram.Icon";
@@ -12,7 +12,7 @@ export default function Home() {
       <div className="absolute z-10 top-0 left-0 w-full h-full">
         <div className="relative h-full w-full ">
           <Image
-            className="w-full h-full blur-sm"
+            className="w-full h-full"
             src={bg}
             alt="Next.js Logo"
             priority
@@ -21,7 +21,7 @@ export default function Home() {
         </div>
       </div>
 
-      <section className="relative z-20 grid gap-12">
+      <section className="relative z-20 grid gap-12 bg-white bg-opacity-70 p-20 rounded-2xl">
         <div className="flex justify-center">
           <Image
             className=""
@@ -35,7 +35,7 @@ export default function Home() {
         <div className="max-w-[70ch] text-center grid gap-2 text-neutral-900 text-lg">
           <div className="flex justify-center items-center gap-2 pb-4">
             <h1 className="font-bold text-3xl sm:text-4xl text-center uppercase ">
-              Ready Soon
+              Coming Soon
             </h1>
             <p className="text-5xl">🚀</p>
           </div>
