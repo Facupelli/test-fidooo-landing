@@ -4,6 +4,7 @@ import Link from "next/link";
 import { FacebookIcon } from "@/icons/Facebook.Icon";
 import { InstagramIcon } from "@/icons/Instagram.Icon";
 import { WhatsappIcon } from "@/icons/Whatsapp.Icon";
+import { LinkedinIcon } from "@/icons/Linkedin.Icon";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
       <div className="absolute z-10 top-0 left-0 w-full h-full">
         <div className="relative h-full w-full ">
           <Image
-            className="w-full h-full"
+            className="w-full h-full blur-sm"
             src={bg}
             alt="Next.js Logo"
             priority
@@ -43,7 +44,7 @@ export default function Home() {
             de presentarte una nueva y mejorada experiencia. Pronto estaremos de
             vuelta con nuevas características y funcionalidades.
           </p>
-          <p>Contacto: support@fidooo.com</p>
+          <p className="font-bold">support@fidooo.com</p>
           <div className="flex justify-center gap-4 pt-4">
             <Link href="https://www.facebook.com/fidooo.eng" target="_blanck">
               <FacebookIcon color="black" />
@@ -56,11 +57,19 @@ export default function Home() {
               <InstagramIcon color="black" />
             </Link>
 
-            <Link href="" target="_blanck">
-              <WhatsappIcon color="black" />
+            <Link
+              href="https://linkedin.com/company/fidooo-engineering"
+              target="_blanck"
+            >
+              <LinkedinIcon color="black" />
             </Link>
 
-            <Link href="" target="_blanck"></Link>
+            <Link
+              href="https://api.whatsapp.com/send/?phone=%2B59176766051&text&type=phone_number&app_absent=0"
+              target="_blanck"
+            >
+              <WhatsappIcon color="black" />
+            </Link>
           </div>
         </div>
       </section>
