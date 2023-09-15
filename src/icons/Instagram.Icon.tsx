@@ -1,13 +1,11 @@
-import 'server-only'
-
 export const InstagramIcon = ({
   color,
   width = 25,
-  height = 25
+  height = 25,
 }: {
-  color: string
-  width?: number
-  height?: number
+  color: string;
+  width?: number;
+  height?: number;
 }): JSX.Element => {
   return (
     <svg
@@ -34,5 +32,5 @@ export const InstagramIcon = ({
         fill={color}
       />
     </svg>
-  )
-}
+  );
+};

@@ -1,13 +1,11 @@
-import 'server-only'
-
 export const WhatsappIcon = ({
   color,
   width = 25,
-  height = 25
+  height = 25,
 }: {
-  color: string
-  width?: number
-  height?: number
+  color: string;
+  width?: number;
+  height?: number;
 }): JSX.Element => {
   return (
     <svg
@@ -30,5 +28,5 @@ export const WhatsappIcon = ({
         fill={color}
       />
     </svg>
-  )
-}
+  );
+};
