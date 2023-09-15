@@ -11,19 +11,15 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        prueba: "linear-gradient(180deg, black 20px, rgba(0,0,0,.1) 10%)",
       },
-      keyframes: {
-        move: {
-          "50%": {
-            transform: "scale(1.05) translateY(5px) ",
-          },
-        },
+      colors: {
+        primary: "#231F48",
+        secondary: "#BAECFF",
+        "secondary-light": "#80DBFF",
       },
-      animation: {
-        move: "move 3s ease-in-out infinite",
+      dropShadow: {
+        prueba: "0px 0px 30px #ff0000",
       },
     },
   },

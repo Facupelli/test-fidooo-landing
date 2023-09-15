@@ -1,5 +1,3 @@
-import "server-only";
-
 export const LinkedinIcon = ({
   color,
   width = 25,
