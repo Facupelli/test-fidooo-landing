@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useLayoutEffect, useState } from "react";
 
-const useIsMobile = (): boolean => {
+const useIsLgScreen = (): boolean => {
   const [width, setWidth] = useState<number>();
 
   useEffect(() => {
@@ -25,4 +25,4 @@ const useIsMobile = (): boolean => {
   return width <= 1024;
 };
 
-export default useIsMobile;
+export default useIsLgScreen;
