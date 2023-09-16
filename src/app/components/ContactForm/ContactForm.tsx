@@ -42,7 +42,7 @@ export default function ContactForm() {
         {currentStepIndex !== 3 && (
           <button
             type="submit"
-            className="text-[20px] md:text-[24px] absolute right-[60px] md:right-[100px] bottom-[-10px] md:bottom-[10px]"
+            className="text-body2 md:text-body1 absolute right-[60px] md:right-[100px] bottom-[-10px] md:bottom-[10px]"
           >
             Enviar
           </button>

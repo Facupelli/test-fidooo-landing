@@ -32,7 +32,7 @@ export default function Navbar({
   };
 
   return (
-    <nav className="flex w-full justify-between items-start py-5 px-4 md:px-16 sticky bg-transparent h-[70px] top-0 z-50">
+    <nav className="flex w-full justify-between items-start py-5 px-4 md:px-16 fixed bg-transparent h-[70px] top-0 z-50 max-w-screen-xl mx-auto">
       <input id="menu" type="checkbox" className="hidden peer" />
       <label htmlFor="menu" className="w-[80px] text-left md:hidden">
         <HamburguerIcon color="white" />
