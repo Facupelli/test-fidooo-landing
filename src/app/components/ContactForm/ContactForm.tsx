@@ -36,7 +36,7 @@ export default function ContactForm() {
     <div className="font-roboto pt-[150px] lg:px-[200px] lg:justify-center">
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="relative grid lg:gap-8 gap-14 lg:w-[800px]"
+        className="relative grid lg:gap-8 gap-14 lg:min-w-[800px]"
       >
         {step}
         {currentStepIndex !== 3 && (
