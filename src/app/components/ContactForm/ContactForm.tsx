@@ -60,7 +60,7 @@ export default function ContactForm() {
         )}
       </form>
       {currentStepIndex !== 3 && (
-        <div className="flex justify-center gap-8 pt-10">
+        <div className="flex justify-center gap-8 pt-12 lg:pt-24">
           <div
             className={`md:w-[23px] md:h-[23px] w-[9px] h-[9px] rounded-full ${
               currentStepIndex === 0 ? "bg-white" : "bg-neutral-500"

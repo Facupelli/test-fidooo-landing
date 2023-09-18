@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="es" className="text-[14px] md:text-base bg-[#000]">
       <body className={poppins.className}>
-        <div className="max-w-screen-2xl mx-auto">{children}</div>
+        <div className="">{children}</div>
         <Footer />
       </body>
     </html>

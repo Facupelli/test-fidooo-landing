@@ -46,7 +46,7 @@ export default function Landing() {
         teamRef={teamRef}
         contactRef={contactRef}
       />
-      <main className="realtive max-w-screen-2xl mx-auto">
+      <main className="realtive">
         <LandingSection
           reference={videoSectionRef}
           className="pt-0 lg:pt-0 px-0 md:px-0 lg:px-0"
@@ -59,18 +59,21 @@ export default function Landing() {
               playsInline
               className="h-screen w-full object-cover"
             >
-              <source src="./intro/intro.mp4" type="video/mp4" />
+              <source src="./intro/intro2.mp4" type="video/mp4" />
               Tu navegador no es compatible con vídeos HTML5
             </video>
           </div>
 
-          <h1 className="text-h1mobile z-20 leading-10 absolute top-[40%] -translate-y-1/2 left-0 text-center md:text-[64px] lg:text-h1 md:leading-[90px]">
+          <h1 className="text-h1mobile z-20 leading-10 absolute top-[40%] -translate-y-1/2 left-1/2 -translate-x-1/2 text-center md:text-[64px] lg:text-h1 md:leading-[90px] lg:max-w-[900px]">
             <strong className="font-black">DESARROLLAMOS SOFTWARE</strong> PARA
             TU NEGOCIO
           </h1>
         </LandingSection>
 
-        <LandingSection reference={servicesRef}>
+        <LandingSection
+          reference={servicesRef}
+          className="max-w-screen-2xl mx-auto"
+        >
           <div className=" lg:flex lg:flex-row-reverse lg:items-center lg:px-16 lg:gap-16 ">
             <div className="relative lg:col-start-2">
               <div className="w-[354px] h-[143px] rounded-[354px] blur-[30px] lg:w-[700px] lg:h-[285px] absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-[#231F48] lg:rounded-[704px] z-10 lg:blur-[54px]" />
@@ -81,11 +84,11 @@ export default function Landing() {
               </h1>
             </div>
 
-            <div className="lg:pt-0 pt-24 lg:px-0 grid gap-8 lg:gap-12 lg:w-full">
+            <div className="lg:relative lg:z-20 lg:pt-0 pt-24 lg:px-0 grid gap-8 lg:gap-12 lg:w-full">
               <div className="grid gap-2.5">
                 <div className="relative h-[125px] md:h-[250px]">
                   <Image
-                    src="./ourServices/software-a-medida.svg"
+                    src="./ourServices/software-a-medida.webp"
                     alt="our services card picture"
                     fill
                     sizes="(max-width: 768px) 360px, 100%"
@@ -99,7 +102,7 @@ export default function Landing() {
               <div className="grid gap-2.5">
                 <div className="relative h-[125px] md:h-[250px]">
                   <Image
-                    src="./ourServices/chatbot-con-ai.png"
+                    src="./ourServices/chatbot.webp"
                     alt="our services card picture"
                     fill
                     sizes="(max-width: 768px) 360px, 100%"
@@ -114,7 +117,10 @@ export default function Landing() {
           </div>
         </LandingSection>
 
-        <LandingSection reference={customersRef}>
+        <LandingSection
+          reference={customersRef}
+          className="max-w-screen-2xl mx-auto"
+        >
           <div className="py-16 relative lg:block z-20 ">
             <div className="lg:hidden w-[354px] h-[188px] absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-[#231F48] rounded-[354px] z-10 blur-[30px]" />
 
@@ -233,7 +239,10 @@ export default function Landing() {
           </div>
         </LandingSection>
 
-        <LandingSection reference={teamRef}>
+        <LandingSection
+          reference={teamRef}
+          className="max-w-screen-2xl mx-auto"
+        >
           <div className="relative">
             <div className="w-[534px] h-[245px] rounded-[534px] blur-[60px] lg:w-[1007px] lg:h-[207px] absolute top-[16%] lg:top-[50%] -translate-y-1/2 left-1/2 -translate-x-1/2 bg-[#231F48] lg:rounded-[50%] z-10 lg:blur-[50px]" />
 
@@ -325,7 +334,10 @@ export default function Landing() {
           </div>
         </LandingSection>
 
-        <LandingSection reference={contactRef} className="pb-24">
+        <LandingSection
+          reference={contactRef}
+          className="pb-24 max-w-screen-2xl mx-auto"
+        >
           <div className="relative">
             <div className="w-[354px] h-[97px] rounded-[354px] blur-[30px] lg:w-[1007px] lg:h-[207px] absolute top-1/2 lg:top-1/2 -translate-y-1/2 left-1/2 lg:left-1/2 -translate-x-1/2 bg-[#231F48] lg:rounded-[50%] z-10 lg:blur-[50px]" />
 
