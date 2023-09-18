@@ -235,7 +235,7 @@ export default function Landing() {
 
         <LandingSection reference={teamRef}>
           <div className="relative">
-            <div className="w-[534px] h-[245px] rounded-[534px] blur-[60px] lg:w-[1007px] lg:h-[207px] absolute top-[16%] lg:top-[50%] -translate-y-1/2 left-1/2 -translate-x-1/2 bg-[#231F48] lg:rounded-[1007px] z-10 lg:blur-[50px]" />
+            <div className="w-[534px] h-[245px] rounded-[534px] blur-[60px] lg:w-[1007px] lg:h-[207px] absolute top-[16%] lg:top-[50%] -translate-y-1/2 left-1/2 -translate-x-1/2 bg-[#231F48] lg:rounded-[50%] z-10 lg:blur-[50px]" />
 
             <h1 className="relative z-20 lg:text-center text-h1mobile lg:text-h1 lg:leading-[90px] leading-10 md:leading-[60px] md:text-[63px]">
               <strong className="font-black">EQUIPO</strong> FIDOOO
@@ -327,7 +327,7 @@ export default function Landing() {
 
         <LandingSection reference={contactRef} className="pb-24">
           <div className="relative">
-            <div className="w-[354px] h-[97px] rounded-[354px] blur-[30px] lg:w-[1007px] lg:h-[207px] absolute top-1/2 lg:top-1/2 -translate-y-1/2 left-1/2 lg:left-[25%] -translate-x-1/2 bg-[#231F48] lg:rounded-[1007px] z-10 lg:blur-[50px]" />
+            <div className="w-[354px] h-[97px] rounded-[354px] blur-[30px] lg:w-[1007px] lg:h-[207px] absolute top-1/2 lg:top-1/2 -translate-y-1/2 left-1/2 lg:left-[25%] -translate-x-1/2 bg-[#231F48] lg:rounded-[50%] z-10 lg:blur-[50px]" />
 
             <h1 className="relative z-20 text-center lg:text-left text-h1mobile lg:text-h1 lg:leading-[90px] leading-10 md:leading-[60px] md:text-[63px]">
               Contáctanos
