@@ -29,12 +29,12 @@ const useCustomersAnimation = ({
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: customersRef.current,
-          scrub: 1,
-          pin: true,
-          start: "40% center",
-          end: "+=2000",
+          start: "30% center",
           // markers: true,
-          toggleActions: "restart none reverse pause",
+          // scrub: 1,
+          // pin: true,
+          // end: "+=2000",
+          // toggleActions: "restart none reverse pause",
         },
       });
 
@@ -49,7 +49,7 @@ const useCustomersAnimation = ({
           rotateX: 0,
           opacity: 1,
           scale: 1,
-          duration: 0.5,
+          duration: 0.3,
         }
       );
 
@@ -64,7 +64,7 @@ const useCustomersAnimation = ({
           rotateX: 0,
           opacity: 1,
           scale: 1,
-          duration: 0.5,
+          duration: 0.3,
         }
       );
 
@@ -79,7 +79,7 @@ const useCustomersAnimation = ({
           rotateX: 0,
           opacity: 1,
           scale: 1,
-          duration: 0.5,
+          duration: 0.3,
         }
       );
 
@@ -94,7 +94,7 @@ const useCustomersAnimation = ({
           rotateX: 0,
           opacity: 1,
           scale: 1,
-          duration: 0.5,
+          duration: 0.3,
         }
       );
 
@@ -109,7 +109,7 @@ const useCustomersAnimation = ({
           rotateX: 0,
           opacity: 1,
           scale: 1,
-          duration: 0.5,
+          duration: 0.3,
         }
       );
 

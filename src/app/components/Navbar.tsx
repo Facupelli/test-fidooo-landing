@@ -27,12 +27,12 @@ export default function Navbar({
     lenis?.scrollTo(section.current, {
       offset: 10,
       duration: 3,
-      lock: true,
+      lock: false,
     });
   };
 
   return (
-    <nav className="flex justify-between items-start py-5 px-4 md:px-16 fixed bg-transparent h-[70px] top-0 z-50 max-w-screen-2xl mx-auto w-full">
+    <nav className="flex justify-between items-center py-5 px-4 md:px-16 fixed bg-[rgba(0,0,0,0.4)] top-0 z-50 max-w-screen-2xl mx-auto w-full">
       <input id="menu" type="checkbox" className="hidden peer" />
       <label htmlFor="menu" className="w-[80px] text-left md:hidden">
         <HamburguerIcon color="white" />
@@ -41,8 +41,8 @@ export default function Navbar({
         src="./logo.svg"
         priority
         alt="Fidooo Logo"
-        width={101}
-        height={35}
+        width={130}
+        height={40}
       />
       <ul className="peer-checked:left-0 absolute grid gap-[38px] top-[70px] left-[-100%] bg-primary p-6 md:left-0 md:top-0 md:p-0 md:w-auto md:bg-transparent md:relative md:flex md:justify-around md:gap-[52px] transition-all duration-250 ease-in-out">
         <li onClick={() => scrollTo(servicesRef)}>Servicios</li>
@@ -50,7 +50,7 @@ export default function Navbar({
         <li onClick={() => scrollTo(teamRef)}>Nosotros</li>
         <li onClick={() => scrollTo(contactRef)}>Contacto</li>
       </ul>
-      <button className="w-[80px] text-right ">ENGLISH</button>
+      <div className="w-[80px]" />
     </nav>
   );
 }

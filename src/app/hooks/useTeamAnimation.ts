@@ -24,11 +24,11 @@ const useTeamAnimation = ({ isMobile, teamRef }: useTeamAnimationProps) => {
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: teamRef.current,
-          scrub: 1,
+          start: "30% center",
           // markers: true,
-          pin: true,
-          end: "+=2500",
-          start: "50% center",
+          // pin: true,
+          // end: "+=2500",
+          // scrub: 1,
         },
       });
 
@@ -42,42 +42,31 @@ const useTeamAnimation = ({ isMobile, teamRef }: useTeamAnimationProps) => {
         {
           opacity: 1,
           scale: 1,
+          duration: 0.5,
         }
       );
 
       tl.to(teamDescription.current, {
         top: "90px",
+        duration: 0.5,
       });
 
       tl.from(
         firstHalfTeam.current,
         {
           right: "110%",
+          duration: 1,
         },
-        "-=0.3"
+        "-=0.4"
       );
 
       tl.from(
         secondHalfTeam.current,
         {
           left: "110%",
+          duration: 1,
         },
         "<"
-      );
-
-      tl.to(
-        {},
-        {
-          onComplete: () => {
-            gsap.to(teamRef.current, {
-              scrollTrigger: {
-                trigger: teamRef.current,
-                start: "top 70px",
-                end: "+=500",
-              },
-            });
-          },
-        }
       );
     }, teamRef);
 
