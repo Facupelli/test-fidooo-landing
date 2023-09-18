@@ -60,7 +60,10 @@ export default function Landing() {
               playsInline
               className="h-screen w-full object-cover"
             >
-              <source src="./intro/intro2.mp4" type="video/mp4" />
+              <source
+                src="https://res.cloudinary.com/dzjz8pe0y/video/upload/v1695062179/fidooo/intro2_p4pith.mp4"
+                type="video/mp4"
+              />
               Tu navegador no es compatible con vídeos HTML5
             </video>
           </div>
