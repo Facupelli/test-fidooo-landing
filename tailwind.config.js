@@ -11,7 +11,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        navbar: "linear-gradient(180deg, black 20px, rgba(0,0,0,.1) 10%)",
+        navbar:
+          "linear-gradient(180deg, rgba(0,0,0,0.6) 35%, rgba(0,0,0,0) 100%)",
       },
       colors: {
         primary: "#231F48",

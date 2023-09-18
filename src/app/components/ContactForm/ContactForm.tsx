@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { useForm } from "react-hook-form";
 import useMultiStepForm from "../../hooks/useMultiStepFrom";
 import FirstStep from "./FirstStep";
@@ -22,13 +21,25 @@ export default function ContactForm() {
     <FourthStep register={register} key={3} />,
   ]);
 
-  const onSubmit = (data: ContactFormData) => {
-    console.log(data);
-
+  const onSubmit = async (data: ContactFormData) => {
     handleNextStep();
 
-    if (currentStepIndex <= 1) {
-      console.log("Tu consulta fue enviada con éxito!");
+    if (currentStepIndex === 2) {
+      const body = JSON.stringify(data);
+
+      try {
+        await fetch(
+          process.env.NODE_ENV === "production"
+            ? "https://fidooo.com/api/sendgrid"
+            : "http://localhost:3000/api/sendgrid",
+          {
+            method: "POST",
+            body,
+          }
+        );
+      } catch (error) {
+        console.log(error);
+      }
     }
   };
 

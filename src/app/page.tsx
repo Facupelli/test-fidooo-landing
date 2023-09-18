@@ -85,7 +85,7 @@ export default function Landing() {
               <div className="grid gap-2.5">
                 <div className="relative h-[125px] md:h-[250px]">
                   <Image
-                    src="./ourServices/software-a-medida.png"
+                    src="./ourServices/software-a-medida.svg"
                     alt="our services card picture"
                     fill
                     sizes="(max-width: 768px) 360px, 100%"

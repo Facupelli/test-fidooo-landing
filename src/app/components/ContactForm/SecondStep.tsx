@@ -20,7 +20,7 @@ export default function SecondStep({ register }: SecondStepProps) {
           />
         </div>
         <div className="border border-[#FFF] w-fit md:max-w-[350px] max-w-[266px] min-h-[80px] p-4 absolute md:top-[-60px] top-[-65px] left-[30px] md:left-[70px] rounded-[10px]">
-          Gracias, para que uno de nuestros expretos pueda responder tu consulta
+          Gracias, para que uno de nuestros expertos pueda responder tu consulta
           dime un email y teléfono de contacto
         </div>
       </div>
