@@ -10,6 +10,7 @@ import useCustomersAnimation from "./hooks/useCustomersAnimation";
 import useTeamAnimation from "./hooks/useTeamAnimation";
 import useIsLgScreen from "./hooks/useIsMobile";
 import { fidoooTeam } from "@/db/data";
+import Footer from "./components/Footer";
 
 export default function Landing() {
   const videoSectionRef = useRef<HTMLDivElement | null>(null);
@@ -46,7 +47,7 @@ export default function Landing() {
         teamRef={teamRef}
         contactRef={contactRef}
       />
-      <main className="realtive">
+      <main className="relative">
         <LandingSection
           reference={videoSectionRef}
           className="pt-0 lg:pt-0 px-0 md:px-0 lg:px-0"
@@ -241,7 +242,7 @@ export default function Landing() {
 
         <LandingSection
           reference={teamRef}
-          className="max-w-screen-2xl mx-auto"
+          className="max-w-screen-2xl mx-auto lg:overflow-hidden"
         >
           <div className="relative">
             <div className="w-[534px] h-[245px] rounded-[534px] blur-[60px] lg:w-[1007px] lg:h-[207px] absolute top-[16%] lg:top-[50%] -translate-y-1/2 left-1/2 -translate-x-1/2 bg-[#231F48] lg:rounded-[50%] z-10 lg:blur-[50px]" />
@@ -262,7 +263,7 @@ export default function Landing() {
           <div className="hidden lg:block lg:relative">
             <div
               ref={firstHalfTeam}
-              className="absolute right-0 min-w-full pt-40 grid grid-cols-2 gap-y-10 lg:flex lg:gap-10 lg:justify-center"
+              className="absolute right-[-100vw] min-w-full pt-40 grid grid-cols-2 gap-y-10 lg:flex lg:gap-10 lg:justify-center"
             >
               {firstHalfteam.map((member, i) => (
                 <div
@@ -286,7 +287,7 @@ export default function Landing() {
 
             <div
               ref={secondHalfTeam}
-              className="absolute top-[280px] left-0 min-w-full pt-24 grid grid-cols-2 gap-y-10 lg:flex lg:gap-10 lg:justify-center"
+              className="absolute top-[280px] left-[-100vw] min-w-full pt-24 grid grid-cols-2 gap-y-10 lg:flex lg:gap-10 lg:justify-center"
             >
               {secondHalfteam.map((member, i) => (
                 <div
@@ -349,6 +350,7 @@ export default function Landing() {
           <ContactForm />
         </LandingSection>
       </main>
+      <Footer />
     </>
   );
 }
@@ -366,7 +368,7 @@ function LandingSection({
     <section
       ref={reference}
       className={twMerge(
-        "relative overflow-hidden min-h-[calc(100vh_-_70px)] pt-[200px] lg:py-32 px-8 md:px-14 lg:px-16",
+        "relative overflow-hidden lg:overflow-visible min-h-[calc(100vh_-_70px)] pt-[200px] lg:py-32 px-8 md:px-14 lg:px-16",
         className
       )}
     >

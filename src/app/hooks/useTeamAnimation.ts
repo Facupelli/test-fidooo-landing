@@ -51,19 +51,19 @@ const useTeamAnimation = ({ isMobile, teamRef }: useTeamAnimationProps) => {
         duration: 0.5,
       });
 
-      tl.from(
+      tl.to(
         firstHalfTeam.current,
         {
-          right: "110%",
+          right: "0",
           duration: 1,
         },
         "-=0.4"
       );
 
-      tl.from(
+      tl.to(
         secondHalfTeam.current,
         {
-          left: "110%",
+          left: "0",
           duration: 1,
         },
         "<"

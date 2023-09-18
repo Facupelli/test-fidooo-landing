@@ -5,10 +5,10 @@ import { RefObject } from "react";
 import useLenisSmoothScroll from "../hooks/useLenisSmoothScroll";
 
 interface NavbarProps {
-  servicesRef: RefObject<HTMLDivElement>;
-  customersRef: RefObject<HTMLDivElement>;
-  teamRef: RefObject<HTMLDivElement>;
-  contactRef: RefObject<HTMLDivElement>;
+  servicesRef?: RefObject<HTMLDivElement>;
+  customersRef?: RefObject<HTMLDivElement>;
+  teamRef?: RefObject<HTMLDivElement>;
+  contactRef?: RefObject<HTMLDivElement>;
 }
 
 export default function Navbar({
@@ -52,10 +52,10 @@ export default function Navbar({
         />
       </div>
       <ul className="peer-checked:left-0 absolute grid gap-[38px] top-[70px] left-[-100%] bg-primary p-6 md:left-0 md:top-0 md:p-0 md:w-auto md:bg-transparent md:relative md:flex md:justify-around md:gap-[52px] transition-all duration-250 ease-in-out">
-        <li onClick={() => scrollTo(servicesRef)}>Servicios</li>
-        <li onClick={() => scrollTo(customersRef)}>Clientes</li>
-        <li onClick={() => scrollTo(teamRef)}>Nosotros</li>
-        <li onClick={() => scrollTo(contactRef)}>Contacto</li>
+        <li onClick={() => servicesRef && scrollTo(servicesRef)}>Servicios</li>
+        <li onClick={() => customersRef && scrollTo(customersRef)}>Clientes</li>
+        <li onClick={() => teamRef && scrollTo(teamRef)}>Nosotros</li>
+        <li onClick={() => contactRef && scrollTo(contactRef)}>Contacto</li>
       </ul>
       <div className="w-[80px]" />
     </nav>
