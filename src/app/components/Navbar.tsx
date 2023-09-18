@@ -37,7 +37,7 @@ export default function Navbar({
   };
 
   return (
-    <nav className="flex justify-between items-center py-5 px-4 md:px-16 fixed bg-[rgba(0,0,0,0.4)] top-0 z-50 w-full">
+    <nav className="flex justify-between items-center py-5 px-4 md:px-16 2xl:px-52 fixed bg-[rgba(0,0,0,0.4)] top-0 z-50 w-full">
       <input id="menu" type="checkbox" className="hidden peer" />
       <label htmlFor="menu" className="w-[80px] text-left md:hidden">
         <HamburguerIcon color="white" />
@@ -57,7 +57,7 @@ export default function Navbar({
         <li onClick={() => teamRef && scrollTo(teamRef)}>Nosotros</li>
         <li onClick={() => contactRef && scrollTo(contactRef)}>Contacto</li>
       </ul>
-      <div className="w-[80px]" />
+      {/* <div className="w-[80px]" /> */}
     </nav>
   );
 }
