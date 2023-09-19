@@ -52,9 +52,9 @@ export default function BotLanding() {
             </div>
           </section>
 
-          <section className="relative px-8 lg:px-24 min-min-h-screen py-28 lg:flex">
+          <section className="relative px-8 lg:px-24 min-min-h-screen py-28 lg:flex lg:items-center">
             <div>
-              <div className="w-[400px] lg:w-[700px] h-[178px] lg:h-[389px] rounded-[400px] lg:rounded-[700px] blur-[43px] lg:blur-[54px] absolute top-[65px] lg:top-[250px] lg:-translate-y-1/2 left-1/2 lg:left-[340px] -translate-x-1/2 bg-[#231F48]" />
+              <div className="w-[400px] lg:w-[700px] h-[178px] lg:h-[389px] rounded-[400px] lg:rounded-[700px] blur-[43px] lg:blur-[54px] absolute top-[65px] lg:top-1/2 lg:-translate-y-1/2 left-1/2 lg:left-[340px] -translate-x-1/2 bg-[#231F48]" />
               <h1 className="relative z-20 leading-10 md:leading-[60px] lg:leading-[90px] text-h1mobile md:text-[63px] lg:text-h1">
                 ¿Qué problemas resuelve?
               </h1>
