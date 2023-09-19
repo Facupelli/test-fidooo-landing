@@ -3,7 +3,6 @@ import { twMerge } from "tailwind-merge";
 import Image from "next/image";
 import { ReactNode, RefObject, useRef } from "react";
 import Navbar from "./components/Navbar";
-import TitleShadow from "./components/TitleShadow";
 import ContactForm from "./components/ContactForm/ContactForm";
 import useLenisSmoothScroll from "./hooks/useLenisSmoothScroll";
 import useCustomersAnimation from "./hooks/useCustomersAnimation";
@@ -80,12 +79,12 @@ export default function Landing() {
         >
           <div className=" lg:flex lg:flex-row-reverse lg:items-center lg:px-16 lg:gap-16 ">
             <div className="relative lg:col-start-2">
-              <div className="w-[354px] h-[143px] rounded-[354px] blur-[30px] lg:w-[700px] lg:h-[285px] absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-[#231F48] lg:rounded-[704px] z-10 lg:blur-[54px]" />
+              <div className="w-[354px] h-[143px] rounded-[40%] blur-[30px] lg:w-[700px] lg:h-[285px] absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-[#231F48] lg:rounded-[70%] z-10 lg:blur-[54px]" />
 
-              <h1 className="relative z-20 grid text-center lg:text-left text-h1mobile lg:text-h1 lg:leading-[90px] leading-10 md:leading-[60px] md:text-[63px]">
+              <LandingSectionTitle className="grid">
                 <span>Nuestros</span>
                 <strong className="font-black">SERVICIOS</strong>
-              </h1>
+              </LandingSectionTitle>
             </div>
 
             <div className="lg:relative lg:z-20 lg:pt-0 pt-24 lg:px-0 grid gap-8 lg:gap-12 lg:w-full">
@@ -126,30 +125,30 @@ export default function Landing() {
           className="max-w-screen-2xl mx-auto"
         >
           <div className="py-16 relative lg:block z-20 ">
-            <div className="lg:hidden w-[354px] h-[188px] absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-[#231F48] rounded-[354px] z-10 blur-[30px]" />
+            <div className="lg:hidden w-[354px] h-[188px] absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-[#231F48] rounded-[40%] z-10 blur-[30px]" />
 
             <div className="relative lg:grid lg:gap-8 lg:max-w-[1000px] lg:mx-auto">
-              <div className="hidden lg:block lg:w-[700px] lg:h-[207px] absolute lg:top-[15%] -translate-y-1/2 lg:left-[25%] -translate-x-1/2 bg-[#231F48] lg:rounded-[704px] z-10 lg:blur-[50px]" />
+              <div className="hidden lg:block lg:w-[700px] lg:h-[207px] absolute lg:top-[15%] -translate-y-1/2 lg:left-[25%] -translate-x-1/2 bg-[#231F48] lg:rounded-[70%] z-10 lg:blur-[50px]" />
 
-              <h1 className="lg:w-fit text-center lg:text-left relative z-20 grid text-h1mobile lg:text-h1 lg:leading-[90px] leading-10 md:leading-[60px] md:text-[63px]">
+              <LandingSectionTitle className="lg:w-fit grid">
                 <strong className="font-black">CLIENTES</strong>
-              </h1>
+              </LandingSectionTitle>
 
-              <div className="hidden lg:block lg:w-[550px] lg:h-[171px] absolute top-1/2 -translate-y-1/2 lg:left-[80%] -translate-x-1/2 bg-[#231F48] lg:rounded-[576px] z-10 lg:blur-[50px]" />
+              <div className="hidden lg:block lg:w-[550px] lg:h-[171px] absolute top-1/2 -translate-y-1/2 lg:left-[80%] -translate-x-1/2 bg-[#231F48] lg:rounded-[50%] z-10 lg:blur-[50px]" />
 
-              <h1 className="text-center flex justify-center lg:justify-end gap-2 lg:gap-4 lg:text-left relative z-20 text-h1mobile lg:text-h1 lg:leading-[90px] leading-10 md:leading-[60px] md:text-[63px]">
+              <LandingSectionTitle className="flex justify-center lg:justify-end gap-2 lg:gap-4">
                 que{" "}
                 <strong className="text-secondary-light font-black">
                   confían
                 </strong>
-              </h1>
+              </LandingSectionTitle>
 
-              <div className="hidden lg:block lg:w-[630px] lg:h-[165px] absolute lg:top-[90%] -translate-y-1/2 lg:left-[40%] -translate-x-1/2 bg-[#231F48] lg:rounded-[630px] z-10 lg:blur-[50px]" />
+              <div className="hidden lg:block lg:w-[630px] lg:h-[165px] absolute lg:top-[90%] -translate-y-1/2 lg:left-[40%] -translate-x-1/2 bg-[#231F48] lg:rounded-[60%] z-10 lg:blur-[50px]" />
 
-              <h1 className="text-center lg:text-left relative z-20 grid text-h1mobile lg:text-h1 lg:leading-[90px] leading-10 md:leading-[60px] md:text-[63px] lg:pl-24">
+              <LandingSectionTitle className="grid lg:pl-24">
                 {" "}
                 en nosotros
-              </h1>
+              </LandingSectionTitle>
             </div>
           </div>
 
@@ -248,11 +247,11 @@ export default function Landing() {
           className="max-w-screen-2xl mx-auto lg:overflow-hidden"
         >
           <div className="relative">
-            <div className="w-[534px] h-[245px] rounded-[534px] blur-[60px] lg:w-[1007px] lg:h-[207px] absolute top-[16%] lg:top-[50%] -translate-y-1/2 left-1/2 -translate-x-1/2 bg-[#231F48] lg:rounded-[50%] z-10 lg:blur-[50px]" />
+            <div className="w-[534px] h-[245px] rounded-[50%] blur-[60px] lg:w-[1007px] lg:h-[207px] absolute top-1/2 lg:top-[50%] -translate-y-1/2 left-1/2 -translate-x-1/2 bg-[#231F48] lg:rounded-[50%] z-10 lg:blur-[50px]" />
 
-            <h1 className="relative z-20 lg:text-center text-h1mobile lg:text-h1 lg:leading-[90px] leading-10 md:leading-[60px] md:text-[63px]">
+            <LandingSectionTitle className="lg:text-center">
               <strong className="font-black">EQUIPO</strong> FIDOOO
-            </h1>
+            </LandingSectionTitle>
             <div
               className="relative z-10 lg:absolute lg:left-1/2 lg:-translate-x-1/2 lg:top-[100px] pt-4 text-base lg:w-[50%] lg:mx-auto"
               ref={teamDescription}
@@ -343,11 +342,11 @@ export default function Landing() {
           className="pb-24 max-w-screen-2xl mx-auto"
         >
           <div className="relative">
-            <div className="w-[354px] h-[97px] rounded-[354px] blur-[30px] lg:w-[1007px] lg:h-[207px] absolute top-1/2 lg:top-1/2 -translate-y-1/2 left-1/2 lg:left-1/2 -translate-x-1/2 bg-[#231F48] lg:rounded-[50%] z-10 lg:blur-[50px]" />
+            <div className="w-[354px] h-[97px] rounded-[40%] blur-[30px] lg:w-[1007px] lg:h-[207px] absolute top-1/2 lg:top-1/2 -translate-y-1/2 left-1/2 lg:left-1/2 -translate-x-1/2 bg-[#231F48] lg:rounded-[50%] z-10 lg:blur-[50px]" />
 
-            <h1 className="relative z-20 text-center text-h1mobile lg:text-h1 lg:leading-[90px] leading-10 md:leading-[60px] md:text-[63px]">
+            <LandingSectionTitle className="lg:text-center">
               Contáctanos
-            </h1>
+            </LandingSectionTitle>
           </div>
 
           <ContactForm />
@@ -377,5 +376,24 @@ function LandingSection({
     >
       {children}
     </section>
+  );
+}
+
+function LandingSectionTitle({
+  children,
+  className,
+}: {
+  children: ReactNode;
+  className?: string;
+}) {
+  return (
+    <h1
+      className={twMerge(
+        "relative z-20 text-center lg:text-left text-h1mobile lg:text-h1 lg:leading-[90px] leading-10 md:leading-[60px] md:text-[63px]",
+        className
+      )}
+    >
+      {children}
+    </h1>
   );
 }

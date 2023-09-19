@@ -1,6 +1,8 @@
 import Navbar from "@/app/components/Navbar";
 import { problemsBotResolves, questions } from "@/db/botData";
 import TryFidoBot from "../components/Bot/TryFidoBot";
+import { ReactNode } from "react";
+import { twMerge } from "tailwind-merge";
 
 export default function BotLanding() {
   return (
@@ -9,27 +11,27 @@ export default function BotLanding() {
 
       <div className="flex justify-center">
         <div className="max-w-screen-2xl overflow-hidden lg:overflow-visible">
-          <section className="relative px-8 lg:px-24 grid place-content-center h-screen">
+          <BotSection className="grid place-content-center h-screen py-0">
             <div className="w-[344px] h-[228px] rounded-[344px] blur-[139px] lg:w-[700px] lg:h-[466px] absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-[#29C2FF] lg:rounded-[700px] z-10 lg:blur-[250px]" />
-            <h1 className="relative z-20 text-center leading-10 md:leading-[60px] lg:leading-[100px] text-h1mobile md:text-[63px] lg:text-h1">
+            <BotSectionTitle>
               <div>
                 <strong>EXPLORA</strong> el poder
               </div>
               <div>
                 de la IA con <strong>FIDOBOT</strong>
               </div>
-            </h1>
-          </section>
+            </BotSectionTitle>
+          </BotSection>
 
-          <section className="relative px-8 lg:px-24 min-h-screen py-28 lg:flex lg:items-center lg:gap-14">
+          <BotSection className="lg:flex lg:items-center lg:gap-14">
             <div className="lg:basis-[40%]">
-              <div className="w-[400px] lg:w-[700px] h-[178px] lg:h-[285px] rounded-[400px] lg:rounded-[700px] blur-[43px] lg:blur-[54px] absolute top-[65px] lg:top-[43%] lg:-translate-y-1/2 left-1/2 lg:left-[300px] -translate-x-1/2 bg-[#231F48]" />
-              <h1 className="relative z-20 leading-10 md:leading-[60px] lg:leading-[90px] text-h1mobile md:text-[63px] lg:text-h1">
+              <div className="w-[400px] lg:w-[700px] h-[178px] lg:h-[285px] rounded-[40%] lg:rounded-[70%] blur-[43px] lg:blur-[54px] absolute top-[65px] lg:top-[43%] lg:-translate-y-1/2 left-1/2 lg:left-[300px] -translate-x-1/2 bg-[#231F48]" />
+              <BotSectionTitle className="lg:text-left">
                 ¿Qué es
                 <div>
                   <strong>FIDOBOT?</strong>
                 </div>
-              </h1>
+              </BotSectionTitle>
 
               <p className="pt-4 relative z-20">
                 Es un asistente virtual capaz de atender a tus clientes gracias
@@ -50,14 +52,14 @@ export default function BotLanding() {
                 Agendar turnos
               </div>
             </div>
-          </section>
+          </BotSection>
 
-          <section className="relative px-8 lg:px-24 min-min-h-screen py-28 lg:flex lg:items-center">
+          <BotSection className="lg:flex lg:items-center">
             <div>
-              <div className="w-[400px] lg:w-[700px] h-[178px] lg:h-[389px] rounded-[400px] lg:rounded-[700px] blur-[43px] lg:blur-[54px] absolute top-[65px] lg:top-1/2 lg:-translate-y-1/2 left-1/2 lg:left-[340px] -translate-x-1/2 bg-[#231F48]" />
-              <h1 className="relative z-20 leading-10 md:leading-[60px] lg:leading-[90px] text-h1mobile md:text-[63px] lg:text-h1">
+              <div className="w-[400px] lg:w-[700px] h-[178px] lg:h-[389px] rounded-[40%] lg:rounded-[70%] blur-[43px] lg:blur-[54px] absolute top-[65px] lg:top-1/2 lg:-translate-y-1/2 left-1/2 lg:left-[340px] -translate-x-1/2 bg-[#231F48]" />
+              <BotSectionTitle className="text-left">
                 ¿Qué problemas resuelve?
-              </h1>
+              </BotSectionTitle>
             </div>
 
             <div className="grid gap-6 relative z-20 pt-11">
@@ -73,15 +75,15 @@ export default function BotLanding() {
                 </div>
               ))}
             </div>
-          </section>
+          </BotSection>
 
-          <section className="relative px-8 lg:px-24 min-h-screen py-28 grid place-content-center">
+          <BotSection className="grid place-content-center">
             <div>
               <div className="w-[344px] lg:w-[700px] h-[228px] lg:h-[466px] rounded-[344px] lg:rounded-[700px] blur-[139px] lg:blur-[250px] absolute top-[25%] lg:top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-[#29C2FF]" />
-              <h1 className="text-center relative z-20 leading-10 md:leading-[60px] lg:leading-[90px] text-h1mobile md:text-[63px] lg:text-h1">
+              <BotSectionTitle>
                 ¿Quieres <strong>TRANSFORMAR</strong> la experiencia de tus{" "}
                 <strong>CLIENTES</strong>?
-              </h1>
+              </BotSectionTitle>
 
               <p className="relative z-20 text-center pt-[90px] lg:pt-[48px] w-2/3 mx-auto">
                 Agenda una reunión con un especialista ahora!
@@ -93,14 +95,14 @@ export default function BotLanding() {
                 </button>
               </div>
             </div>
-          </section>
+          </BotSection>
 
-          <section className="relative px-8 lg:px-24 min-h-screen py-28 ">
+          <BotSection>
             <div>
-              <div className="w-[400px] h-[178px] rounded-[400px] blur-[43px] absolute top-[130px] -translate-y-1/2 left-1/2 -translate-x-1/2 bg-[#231F48] lg:hidden" />
-              <h1 className="text-center lg:text-left relative z-20 leading-10 md:leading-[60px] lg:leading-[90px] text-h1mobile md:text-[63px] lg:text-h1 lg:w-[90%]">
+              <div className="w-[400px] h-[178px] rounded-[40%] blur-[43px] absolute top-[130px] -translate-y-1/2 left-1/2 -translate-x-1/2 bg-[#231F48] lg:hidden" />
+              <BotSectionTitle className="lg:text-left">
                 Resolvemos todas tus dudas
-              </h1>
+              </BotSectionTitle>
 
               <div className="pt-[56px] relative z-20 flex flex-col items-center lg:items-start gap-[22px] lg:gap-[34px]">
                 {questions.map((question) => (
@@ -113,17 +115,17 @@ export default function BotLanding() {
                 ))}
               </div>
             </div>
-          </section>
+          </BotSection>
 
-          <section className="relative px-8 lg:px-24 min-h-screen py-28 ">
+          <BotSection>
             <div>
-              <div className="w-[400px] h-[178px] rounded-[400px] blur-[43px] absolute top-[130px] -translate-y-1/2 left-1/2 -translate-x-1/2 bg-[#231F48] lg:hidden" />
-              <h1 className="relative z-20 leading-10 md:leading-[60px] lg:leading-[90px] text-h1mobile md:text-[63px] lg:text-h1 lg:w-[90%]">
+              <div className="w-[400px] h-[178px] rounded-[40%] blur-[43px] absolute top-[130px] -translate-y-1/2 left-1/2 -translate-x-1/2 bg-[#231F48] lg:hidden" />
+              <BotSectionTitle className="text-left">
                 <strong>3 RAZONES</strong>
                 <div className="text-base lg:text-h4 lg:pt-2">
                   Para añadir Fidobot a tu negocio
                 </div>
-              </h1>
+              </BotSectionTitle>
             </div>
 
             <div className="grid gap-[30px] pt-[84px] relative z-20">
@@ -161,13 +163,11 @@ export default function BotLanding() {
                 </p>
               </div>
             </div>
-          </section>
+          </BotSection>
 
-          <section className="relative min-h-screen py-28 ">
+          <BotSection className="py-0">
             <div className="px-8 lg:px-12">
-              <h1 className="text-center relative z-20 leading-10 md:leading-[60px] lg:leading-[90px] text-h1mobile md:text-[63px] lg:text-h1">
-                Planes
-              </h1>
+              <BotSectionTitle>Planes</BotSectionTitle>
             </div>
 
             <div>
@@ -236,18 +236,18 @@ export default function BotLanding() {
                 </div>
               </div>
             </div>
-          </section>
+          </BotSection>
 
-          <section className="relative px-8 lg:px-24 min-h-screen py-28 grid place-content-center">
+          <BotSection className="grid place-content-center">
             <TryFidoBot />
-          </section>
+          </BotSection>
 
-          <section className="relative px-8 lg:px-24 min-h-screen py-28 grid place-content-center">
+          <BotSection className="grid place-content-center">
             <div>
               <div className="w-[344px] lg:w-[700px] h-[228px] lg:h-[466px] rounded-[344px] lg:rounded-[700px] blur-[139px] lg:blur-[250px] absolute top-[25%] lg:top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-[#29C2FF]" />
-              <h1 className="text-center relative z-20 leading-10 md:leading-[60px] lg:leading-[90px] text-h1mobile md:text-[63px] lg:text-h1 w-[80%] mx-auto lg:w-full">
+              <BotSectionTitle className="w-[80%] mx-auto lg:w-full">
                 ¿Te quedaron dudas por resolver?
-              </h1>
+              </BotSectionTitle>
 
               <p className="relative z-20 text-center pt-[90px] lg:pt-[48px] mx-auto lg:w-[55%]">
                 Conversa con un especialista y descubre si FidoBot es la
@@ -260,9 +260,47 @@ export default function BotLanding() {
                 </button>
               </div>
             </div>
-          </section>
+          </BotSection>
         </div>
       </div>
     </main>
+  );
+}
+
+function BotSection({
+  children,
+  className,
+}: {
+  children: ReactNode;
+  className?: string;
+}) {
+  return (
+    <section
+      className={twMerge(
+        "relative px-8 lg:px-24 min-h-screen py-28",
+        className
+      )}
+    >
+      {children}
+    </section>
+  );
+}
+
+function BotSectionTitle({
+  children,
+  className,
+}: {
+  children: ReactNode;
+  className?: string;
+}) {
+  return (
+    <h1
+      className={twMerge(
+        "relative z-20 text-center leading-10 md:leading-[60px] lg:leading-[90px] text-h1mobile md:text-[63px] lg:text-h1",
+        className
+      )}
+    >
+      {children}
+    </h1>
   );
 }
